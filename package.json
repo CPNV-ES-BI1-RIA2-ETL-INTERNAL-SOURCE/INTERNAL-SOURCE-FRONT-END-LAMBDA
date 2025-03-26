@@ -1,0 +1,31 @@
+{
+  "name": "internal-source-front-end-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda function to get QuickSight dashboard embed URLs",
+  "main": "src/lambda.js",
+  "type": "module",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPNV-ES-BI1-RIA2-ETL-INTERNAL-SOURCE/INTERNAL-SOURCE-FRONT-END-LAMBDA.git"
+  },
+  "author": "Victorien Montavon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CPNV-ES-BI1-RIA2-ETL-INTERNAL-SOURCE/INTERNAL-SOURCE-FRONT-END-LAMBDA/issues"
+  },
+  "homepage": "https://github.com/CPNV-ES-BI1-RIA2-ETL-INTERNAL-SOURCE/INTERNAL-SOURCE-FRONT-END-LAMBDA#readme",
+  "dependencies": {
+    "@aws-sdk/client-quicksight": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
