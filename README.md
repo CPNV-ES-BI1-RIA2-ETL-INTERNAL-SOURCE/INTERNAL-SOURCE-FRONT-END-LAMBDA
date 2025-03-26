@@ -1,0 +1,1 @@
+# QuickSight Dashboard Embed URL Lambda
