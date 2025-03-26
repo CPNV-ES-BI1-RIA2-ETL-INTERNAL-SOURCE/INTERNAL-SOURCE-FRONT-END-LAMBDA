@@ -1,0 +1,39 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "StatementId": "FunctionURLAllowPublicAccess",
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "lambda:InvokeFunctionUrl",
+        "Resource": "arn:aws:lambda:eu-north-1:709024702237:function:RIA2-GetUrlDashboard",
+        "Condition": {
+          "StringEquals": {
+            "lambda:FunctionUrlAuthType": "NONE"
+          }
+        }
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "quicksight:GenerateEmbedUrlForRegisteredUser",
+          "quicksight:GetDashboardEmbedUrl"
+        ],
+        "Resource": [
+          "arn:aws:quicksight:eu-north-1:709024702237:user/default/*",
+          "arn:aws:quicksight:eu-north-1:709024702237:dashboard/*",
+          "arn:aws:quicksight:eu-south-1:709024702237:namespace/default/*",
+          "arn:aws:quicksight:eu-south-1:709024702237:namespace/default/user/*"
+        ]
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        "Resource": "arn:aws:logs:*:*:*"
+      }
+    ]
+  }
