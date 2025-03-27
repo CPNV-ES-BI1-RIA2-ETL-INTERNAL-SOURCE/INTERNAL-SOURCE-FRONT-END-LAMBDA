@@ -107,8 +107,8 @@ La Lambda accepte les paramètres d'entrée suivants (event) :
 
 ```json
 {
-    "namespace": "default",  // optionnel, par défaut "default"
-    "sessionLifetime": 600   // optionnel, par défaut 600 minutes (10 heures)
+    "namespace": "default", // optionnel
+    "sessionLifetime": 600 // optionnel, par défaut 600 minutes
 }
 ```
 
